@@ -9,5 +9,18 @@ export default defineConfig({
     open: true,
     host: true
   },
-  base: '/'
+  base: '/',
+  build: {
+    rollupOptions: {
+      external: ['react', 'react-dom'],
+      output: {
+        globals: {
+          react: 'React',
+          'react-dom': 'ReactDOM',
+        },
+      },
+    },
+    sourcemap: true,
+    chunkSizeWarningLimit: 1600
+  }
 })
