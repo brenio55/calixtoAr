@@ -1,0 +1,497 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Outfit:wght@100..900&display=swap');
+
+
+// Core Colors
+$primary-color: #161632;
+$secondary-color: #d4b758;
+$accent-color: #dbb057;
+$success-color: #28a745;
+$info-color: #17a2b8;
+$warning-color: #ffc107;
+$danger-color: #dc3545;
+$light-color: #f8f9fa;
+$dark-color: #343a40;
+
+// Neutral Colors
+$white: #ffffff;
+$black: #000000;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+// Typography
+$font-family-primary: 'Outfit', sans-serif;
+$font-family-secondary: 'Arial', sans-serif;
+$font-family-monospace: 'Courier New', monospace;
+
+// Font Sizes
+$font-size-base: 16px;
+$font-size-xs: 0.75rem;    // 12px
+$font-size-sm: 0.875rem;   // 14px
+$font-size-md: 1rem;       // 16px
+$font-size-lg: 1.125rem;   // 18px
+$font-size-xl: 1.25rem;    // 20px
+$font-size-2xl: 1.5rem;    // 24px
+$font-size-3xl: 1.875rem;  // 30px
+$font-size-4xl: 2.25rem;   // 36px
+$font-size-5xl: 3rem;      // 48px
+$font-size-6xl: 3.75rem;   // 60px
+$font-size-7xl: 4.5rem;    // 72px
+$font-size-8xl: 6rem;      // 96px
+$font-size-9xl: 8rem;      // 128px
+$font-size-large: 30px;
+$font-size-xlarge: 90px;
+
+// Font Weights
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+$font-weight-black: 900;
+
+// Line Heights
+$line-height-none: 1;
+$line-height-tight: 1.25;
+$line-height-snug: 1.375;
+$line-height-normal: 1.5;
+$line-height-relaxed: 1.625;
+$line-height-loose: 2;
+
+// Spacing
+$spacing-0: 0;
+$spacing-1: 0.25rem;   // 4px
+$spacing-2: 0.5rem;    // 8px
+$spacing-3: 0.75rem;   // 12px
+$spacing-4: 1rem;      // 16px
+$spacing-5: 1.25rem;   // 20px
+$spacing-6: 1.5rem;    // 24px
+$spacing-8: 2rem;      // 32px
+$spacing-10: 2.5rem;   // 40px
+$spacing-12: 3rem;     // 48px
+$spacing-16: 4rem;     // 64px
+$spacing-20: 5rem;     // 80px
+$spacing-24: 6rem;     // 96px
+$spacing-32: 8rem;     // 128px
+
+// Breakpoints
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+// Container Max Widths
+$container-max-width-sm: 540px;
+$container-max-width-md: 720px;
+$container-max-width-lg: 960px;
+$container-max-width-xl: 1140px;
+$container-max-width-xxl: 1320px;
+
+// Z-index
+$z-index-dropdown: 1000;
+$z-index-sticky: 1020;
+$z-index-fixed: 1030;
+$z-index-modal-backdrop: 1040;
+$z-index-modal: 1050;
+$z-index-popover: 1060;
+$z-index-tooltip: 1070;
+
+// Border Radius
+$border-radius-none: 0;
+$border-radius-sm: 0.125rem;    // 2px
+$border-radius-md: 0.25rem;     // 4px
+$border-radius-lg: 0.5rem;      // 8px
+$border-radius-xl: 0.75rem;     // 12px
+$border-radius-2xl: 1rem;       // 16px
+$border-radius-3xl: 1.5rem;     // 24px
+$border-radius-full: 9999px;
+
+// Box Shadows
+$shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+$shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+$shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+$shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+$shadow-light: 0 4px 24px rgba(150, 163, 181, 0.08);
+
+// Transitions
+$transition-base: all 0.2s ease-in-out;
+$transition-fast: all 0.15s ease-in-out;
+$transition-slow: all 0.3s ease-in-out;
+$transition-default: all 0.2s ease;
+
+// Opacity
+$opacity-0: 0;
+$opacity-25: 0.25;
+$opacity-50: 0.5;
+$opacity-75: 0.75;
+$opacity-100: 1;
+
+* {
+  max-width: 100%;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+// Layout containers
+.w-layout-blockcontainer {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+  @media screen and (max-width: 991px) {
+    max-width: 728px;
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: none;
+  }
+}
+
+// Navbar styles
+.navbar-logo-left {
+  &-container {
+    z-index: 5;
+    background-color: transparent;
+    width: 1030px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 20px;
+
+    &.shadow-three {
+      width: 100%;
+      max-width: 1140px;
+      margin-bottom: 0;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 991px) {
+    max-width: 728px;
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: none;
+  }
+}
+
+// Navigation styles
+.navbar-wrapper {
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  display: flex;
+}
+
+.nav-menu {
+  &-wrapper {
+    color: #fff;
+    background-color: transparent;
+  }
+
+  &-two {
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    display: flex;
+
+    @media screen and (max-width: 991px) {
+      background-color: #fff;
+      border-radius: 50px;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 10px;
+      padding: 20px;
+      display: flex;
+      box-shadow: 0 8px 50px rgba(0, 0, 0, 0.05);
+    }
+
+    @media screen and (max-width: 767px) {
+      border-radius: 20px;
+      flex-direction: column;
+      padding-bottom: 30px;
+    }
+  }
+}
+
+.nav-link {
+  color: #fff;
+  letter-spacing: 0.25px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 5px 10px;
+  font-family: $font-family-primary;
+  font-size: $font-size-base;
+  line-height: 20px;
+  text-decoration: none;
+
+  &:hover {
+    color: #fff;
+    transform: scale(1.05);
+  }
+
+  &:focus-visible {
+    outline-offset: 0px;
+    color: #0050bd;
+    border-radius: 4px;
+    outline: 2px solid #0050bd;
+  }
+
+  @media screen and (max-width: 991px) {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+  }
+}
+
+// Hero section styles
+.container-2 {
+  color: #fff;
+  background-image: url('/img/calixtoBackground.svg');
+  background-position: 50%;
+  background-size: cover;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  max-width: none;
+  height: 100vh;
+  margin-top: -120px;
+  padding-top: 0;
+  display: flex;
+}
+
+.container-3 {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  display: flex;
+}
+
+.heading {
+  color: #fff;
+  text-align: center;
+  width: 57vw;
+  margin-top: -50px;
+  margin-bottom: 34px;
+  font-size: 64px;
+  line-height: 60px;
+}
+
+.text-span {
+  color: $secondary-color;
+
+  &-2 {
+    color: $accent-color;
+  }
+}
+
+.text-block{
+  font-family: $font-family-primary;
+  font-size: $font-size-base;
+  line-height: 20px;
+}
+
+.button {
+  text-align: center;
+  background-color: #161632;
+  border: 2px solid #828282;
+  border-radius: 5.12px;
+  flex-flow: column;
+  padding-bottom: 5px;
+  
+  width: 202px;
+  height: 52px;
+  font-size: 30px;
+  text-decoration: none;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+
+  &-primary-2 {
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: $black;
+    padding: 12px 25px;
+    font-size: 12px;
+    line-height: 20px;
+    transition: $transition-default;
+
+    &:hover {
+      color: #fff;
+      background-color: #32343a;
+    }
+
+    &:active {
+      background-color: #43464d;
+    }
+  }
+}
+
+// Hero heading left section
+.hero-heading-left {
+  background-color: #f5f7fa;
+  border-bottom: 1px solid #e4ebf3;
+  padding: 80px 30px;
+  position: relative;
+
+  @media screen and (max-width: 767px) {
+    padding: 60px 15px;
+  }
+}
+
+.hero-wrapper {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+
+  @media screen and (max-width: 991px) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: -40px;
+  }
+}
+
+.hero-split {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 46%;
+  display: flex;
+
+  @media screen and (max-width: 991px) {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+.shadow-two {
+  box-shadow: $shadow-light;
+}
+
+.margin-bottom-24px {
+  margin-bottom: 24px;
+}
+
+// Mobile menu button
+.menu-button {
+  @media screen and (max-width: 991px) {
+    padding: 12px;
+
+    &.w--open {
+      color: #fff;
+      background-color: #a6b1bf;
+    }
+  }
+}
+
+.nav-menu-two, .w-list-unstyled ul li {
+    list-style: none;
+}
+
+.subTitleHeroBanner{
+  font-family: "Outfit", sans-serif;
+  font-size: 26px;
+  line-height: 30px;
+  padding: 0 205px;
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.heroAirConditioner{
+  margin-top: 11px;
+  width: 560px;
+}
+
+.dropDownShadowImage{
+  /* Calixo Ar Foto Quem Somos */
+
+  // background: url(af43d880-8d7f-40a9-b458-e757b64f50d5 (2).jpg);
+  box-shadow: 0px 4px 32px 17px rgba(151, 151, 151, 0.25);
+  border-radius: 2px;
+
+}
+
+.logo{
+  width: 225px;
+  height: auto;
+}
+
+.lightTextBeside{
+  font-weight: 200;
+  font-size: 64px;
+  line-height: 70px;
+  width: 516px;
+  margin-top: 0px;
+  margin-left: 0;
+  padding: 0;
+  font-family: 'Outfit';
+}
+
+.titleLightTextBeside{
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.lightTextBesideLeft, .titleLightTextBesideLeft, .align-left{
+  text-align: left;
+  align-self: flex-start;
+}
+
+.lightTextBesideRight, .titleLightTextBesideRight, .align-right{
+  text-align: right;
+  align-self: flex-end;
+}
+
+section.quemSomos{
+    
+    background: linear-gradient(76.64deg, #000000 7.66%, #0F1023 24.17%, #181818 58.49%, #1D1D1D 92.34%);
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    .quemSomos{
+      font-family: "Outfit", sans-serif;
+      font-size: 64px;
+      line-height: 60px;
+      color: #fff;
+      text-align: center;
+    }
+
+}
+

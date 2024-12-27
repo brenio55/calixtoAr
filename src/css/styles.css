@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Outfit:wght@100..900&display=swap");
+* {
+  max-width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.w-layout-blockcontainer {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+@media screen and (max-width: 991px) {
+  .w-layout-blockcontainer {
+    max-width: 728px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .w-layout-blockcontainer {
+    max-width: none;
+  }
+}
+
+.navbar-logo-left-container {
+  z-index: 5;
+  background-color: transparent;
+  width: 1030px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 20px;
+}
+.navbar-logo-left-container.shadow-three {
+  width: 100%;
+  max-width: 1140px;
+  margin-bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 991px) {
+  .container {
+    max-width: 728px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: none;
+  }
+}
+
+.navbar-wrapper {
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  display: flex;
+}
+
+.nav-menu-wrapper {
+  color: #fff;
+  background-color: transparent;
+}
+.nav-menu-two {
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+  display: flex;
+}
+@media screen and (max-width: 991px) {
+  .nav-menu-two {
+    background-color: #fff;
+    border-radius: 50px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    padding: 20px;
+    display: flex;
+    box-shadow: 0 8px 50px rgba(0, 0, 0, 0.05);
+  }
+}
+@media screen and (max-width: 767px) {
+  .nav-menu-two {
+    border-radius: 20px;
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+}
+
+.nav-link {
+  color: #fff;
+  letter-spacing: 0.25px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 5px 10px;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+.nav-link:focus-visible {
+  outline-offset: 0px;
+  color: #0050bd;
+  border-radius: 4px;
+  outline: 2px solid #0050bd;
+}
+@media screen and (max-width: 991px) {
+  .nav-link {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .nav-link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+  }
+}
+
+.container-2 {
+  color: #fff;
+  background-image: url("/img/calixtoBackground.svg");
+  background-position: 50%;
+  background-size: cover;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  max-width: none;
+  height: 100vh;
+  margin-top: -120px;
+  padding-top: 0;
+  display: flex;
+}
+
+.container-3 {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  display: flex;
+}
+
+.heading {
+  color: #fff;
+  text-align: center;
+  width: 57vw;
+  margin-top: -50px;
+  margin-bottom: 34px;
+  font-size: 64px;
+  line-height: 60px;
+}
+
+.text-span {
+  color: #d4b758;
+}
+.text-span-2 {
+  color: #dbb057;
+}
+
+.text-block {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button {
+  text-align: center;
+  background-color: #161632;
+  border: 2px solid #828282;
+  border-radius: 5.12px;
+  flex-flow: column;
+  padding-bottom: 5px;
+  width: 202px;
+  height: 52px;
+  font-size: 30px;
+  text-decoration: none;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+.button-primary-2 {
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: #000000;
+  padding: 12px 25px;
+  font-size: 12px;
+  line-height: 20px;
+  transition: all 0.2s ease;
+}
+.button-primary-2:hover {
+  color: #fff;
+  background-color: #32343a;
+}
+.button-primary-2:active {
+  background-color: #43464d;
+}
+
+.hero-heading-left {
+  background-color: #f5f7fa;
+  border-bottom: 1px solid #e4ebf3;
+  padding: 80px 30px;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  .hero-heading-left {
+    padding: 60px 15px;
+  }
+}
+
+.hero-wrapper {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+@media screen and (max-width: 991px) {
+  .hero-wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: -40px;
+  }
+}
+
+.hero-split {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 46%;
+  display: flex;
+}
+@media screen and (max-width: 991px) {
+  .hero-split {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+.shadow-two {
+  box-shadow: 0 4px 24px rgba(150, 163, 181, 0.08);
+}
+
+.margin-bottom-24px {
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 991px) {
+  .menu-button {
+    padding: 12px;
+  }
+  .menu-button.w--open {
+    color: #fff;
+    background-color: #a6b1bf;
+  }
+}
+
+.nav-menu-two, .w-list-unstyled ul li {
+  list-style: none;
+}
+
+.subTitleHeroBanner {
+  font-family: "Outfit", sans-serif;
+  font-size: 26px;
+  line-height: 30px;
+  padding: 0 205px;
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.heroAirConditioner {
+  margin-top: 11px;
+  width: 560px;
+}
+
+.dropDownShadowImage {
+  /* Calixo Ar Foto Quem Somos */
+  box-shadow: 0px 4px 32px 17px rgba(151, 151, 151, 0.25);
+  border-radius: 2px;
+}
+
+.logo {
+  width: 225px;
+  height: auto;
+}
+
+.lightTextBeside {
+  font-weight: 200;
+  font-size: 64px;
+  line-height: 70px;
+  width: 516px;
+  margin-top: 0px;
+  margin-left: 0;
+  padding: 0;
+  font-family: "Outfit";
+}
+
+.titleLightTextBeside {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.lightTextBesideLeft, .titleLightTextBesideLeft, .align-left {
+  text-align: left;
+  align-self: flex-start;
+}
+
+.lightTextBesideRight, .titleLightTextBesideRight, .align-right {
+  text-align: right;
+  align-self: flex-end;
+}
+
+section.quemSomos {
+  background: linear-gradient(76.64deg, #000000 7.66%, #0F1023 24.17%, #181818 58.49%, #1D1D1D 92.34%);
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+section.quemSomos .quemSomos {
+  font-family: "Outfit", sans-serif;
+  font-size: 64px;
+  line-height: 60px;
+  color: #fff;
+  text-align: center;
+}/*# sourceMappingURL=styles.css.map */
