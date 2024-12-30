@@ -461,10 +461,22 @@ body{
   font-family: 'Outfit';
 }
 
+.lighterTextBeside{
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 50px;
+  width: 516px;
+  margin-top: 0px;
+  margin-left: 0;
+  padding: 0;
+  font-family: "Outfit";
+}
+
 .titleLightTextBeside{
   font-weight: 700;
   font-size: 24px;
 }
+
 
 .lightTextBesideLeft, .titleLightTextBesideLeft, .align-left{
   text-align: left;
@@ -474,6 +486,14 @@ body{
 .lightTextBesideRight, .titleLightTextBesideRight, .align-right{
   text-align: right;
   align-self: flex-end;
+}
+
+.section-title{
+    font-family: "Outfit", sans-serif;
+    font-size: 64px;
+    line-height: 60px;
+    color: #fff;
+    text-align: center;
 }
 
 section.quemSomos{
@@ -494,4 +514,48 @@ section.quemSomos{
     }
 
 }
+
+section.nossosDiferenciais{
+
+  // background: linear-gradient(76.64deg, #000000 7.66%, #0F1023 24.17%, #181818 58.49%, #1D1D1D 92.34%);
+  background-color: white;
+  color: #000;
+
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+  h1{
+    color: #000;  
+  }
+
+  .hero-wrapper{
+    width: 100%;
+  }
+
+  .nossosDiferenciaisEquipImg{
+    margin-left: -30px;
+  }
+
+  .hero-split-right{
+     gap: 50px;
+  }
+
+  .titleLightTextBesideRight{
+    font-size: 33px;
+  }
+
+  .lighterTextBeside{
+    width: 437px;
+  }
+
+}
+
+.text-span-black{
+  color: #000;
+  font-weight: 700;
+}
+
 

@@ -4,7 +4,7 @@ const QuemSomos = () => {
   return (
     <section className="hero-heading-left quemSomos">
       <div className="container-4">
-        <h1 className="quemSomos">Quem Somos</h1>
+        <h1 className="quemSomos section-title">Quem Somos</h1>
         <div className="hero-wrapper">
           <div className="hero-split">    
             <p className="titleLightTextBeside titleLightTextBesideLeft">Calixto Ar</p>
