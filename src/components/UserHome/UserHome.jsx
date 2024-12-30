@@ -5,6 +5,7 @@ import QuemSomos from '../QuemSomos/QuemSomos';
 import Diferenciais from '../Diferenciais/Diferenciais';
 import Clientes from '../Clientes/Clientes';
 import Equipe from '../Equipe/Equipe';
+import Tecnologia from '../Tecnologia/Tecnologia';
 
 const UserHome = () => {
   return (
@@ -13,6 +14,7 @@ const UserHome = () => {
       <MainBanner />
       <QuemSomos />
       <Diferenciais />
+      <Tecnologia />
       <Clientes />
       <Equipe />
     </>
