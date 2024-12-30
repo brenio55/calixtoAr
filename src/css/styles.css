@@ -391,4 +391,49 @@ section.nossosDiferenciais .lighterTextBeside {
 .text-span-black {
   color: #000;
   font-weight: 700;
+}
+
+.slider-nossos-diferenciais {
+  width: 100%;
+  padding: 40px 0;
+}
+.slider-nossos-diferenciais .swiper {
+  padding: 20px;
+}
+.slider-nossos-diferenciais .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-nossos-diferenciais .marca-item {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in-out;
+}
+.slider-nossos-diferenciais .marca-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.slider-nossos-diferenciais .marca-item img {
+  width: 160px;
+  height: 108px;
+  object-fit: contain;
+}
+.slider-nossos-diferenciais .swiper-button-next,
+.slider-nossos-diferenciais .swiper-button-prev {
+  color: #161632;
+}
+.slider-nossos-diferenciais .swiper-button-next:after,
+.slider-nossos-diferenciais .swiper-button-prev:after {
+  font-size: 24px;
+}
+.slider-nossos-diferenciais .swiper-pagination-bullet {
+  background: #ced4da;
+  opacity: 0.5;
+}
+.slider-nossos-diferenciais .swiper-pagination-bullet-active {
+  background: #161632;
+  opacity: 1;
 }/*# sourceMappingURL=styles.css.map */

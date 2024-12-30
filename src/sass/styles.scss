@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Outfit:wght@100..900&display=swap');
 
 
@@ -556,6 +555,61 @@ section.nossosDiferenciais{
 .text-span-black{
   color: #000;
   font-weight: 700;
+}
+
+.slider-nossos-diferenciais {
+  width: 100%;
+  padding: 40px 0;
+  
+  .swiper {
+    padding: 20px;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .marca-item {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: $shadow-sm;
+    transition: $transition-base;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: $shadow-md;
+    }
+
+    img {
+      width: 160px;
+      height: 108px;
+      object-fit: contain;
+    }
+  }
+
+  // Navegação
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: $primary-color;
+    
+    &:after {
+      font-size: 24px;
+    }
+  }
+
+  // Paginação
+  .swiper-pagination-bullet {
+    background: $gray-400;
+    opacity: 0.5;
+    
+    &-active {
+      background: $primary-color;
+      opacity: 1;
+    }
+  }
 }
 
 
