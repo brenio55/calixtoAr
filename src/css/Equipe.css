@@ -510,55 +510,47 @@ section.tecnologia .timeline .desde1968 {
 }
 .equipe .equipe-slider {
   padding: 40px 0;
-  max-width: 100vw;
-  margin: 0 auto;
+  width: 100%;
 }
 .equipe .equipe-slider .equipe-swiper {
   padding: 50px 0;
-  overflow: visible;
+  width: 100%;
 }
 .equipe .equipe-slider .swiper-slide {
-  transition: all 0.3s ease;
+  width: 800px;
   opacity: 0.4;
-  transform: scale(0.85);
+  transition: opacity 0.3s;
+}
+@media (max-width: 992px) {
+  .equipe .equipe-slider .swiper-slide {
+    width: 600px;
+  }
+}
+@media (max-width: 768px) {
+  .equipe .equipe-slider .swiper-slide {
+    width: 400px;
+  }
+}
+@media (max-width: 576px) {
+  .equipe .equipe-slider .swiper-slide {
+    width: 300px;
+  }
 }
 .equipe .equipe-slider .swiper-slide-active {
   opacity: 1;
-  transform: scale(1);
 }
 .equipe .equipe-slider .swiper-slide .equipe-slide {
-  background: white;
+  width: 100%;
+  height: 100%;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 .equipe .equipe-slider .swiper-slide .equipe-slide img {
   width: 100%;
-  height: auto;
-  aspect-ratio: 1205/905;
+  height: 100%;
   object-fit: cover;
-}
-@media (min-width: 992px) {
-  .equipe .equipe-slider .swiper-slide .equipe-slide img {
-    width: 1205px;
-    height: 515px;
-  }
-}
-@media (max-width: 992px) {
-  .equipe .equipe-slider .swiper-slide .equipe-slide img {
-    width: 100%;
-    min-height: 500px;
-  }
-}
-@media (max-width: 768px) {
-  .equipe .equipe-slider .swiper-slide .equipe-slide img {
-    min-height: 400px;
-  }
-}
-@media (max-width: 576px) {
-  .equipe .equipe-slider .swiper-slide .equipe-slide img {
-    min-height: 300px;
-  }
+  aspect-ratio: 16/9;
 }
 .equipe .swiper-button-next,
 .equipe .swiper-button-prev {
@@ -581,8 +573,4 @@ section.tecnologia .timeline .desde1968 {
 .equipe .swiper-pagination-bullet-active {
   background: #161632;
   opacity: 1;
-}
-.equipe .swiper-slide-shadow-left,
-.equipe .swiper-slide-shadow-right {
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
 }/*# sourceMappingURL=Equipe.css.map */

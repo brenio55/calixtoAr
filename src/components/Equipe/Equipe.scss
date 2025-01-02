@@ -31,53 +31,46 @@
 
   .equipe-slider {
     padding: 40px 0;
-    max-width: 100vw;
-    margin: 0 auto;
+    width: 100%;
     
     .equipe-swiper {
       padding: 50px 0;
-      overflow: visible;
+      width: 100%;
     }
 
     .swiper-slide {
-      transition: all 0.3s ease;
+      width: 800px;
       opacity: 0.4;
-      transform: scale(0.85);
+      transition: opacity 0.3s;
       
+      @media (max-width: $breakpoint-lg) {
+        width: 600px;
+      }
+      
+      @media (max-width: $breakpoint-md) {
+        width: 400px;
+      }
+      
+      @media (max-width: $breakpoint-sm) {
+        width: 300px;
+      }
+
       &-active {
         opacity: 1;
-        transform: scale(1);
       }
 
       .equipe-slide {
-        background: white;
+        width: 100%;
+        height: 100%;
         border-radius: 8px;
         overflow: hidden;
         box-shadow: $shadow-md;
         
         img {
           width: 100%;
-          height: auto;
-          aspect-ratio: 1205/905;
+          height: 100%;
           object-fit: cover;
-
-          @media (min-width: $breakpoint-lg) {
-            width: 1205px;
-            height: 515px;
-          }
-
-          @media (max-width: $breakpoint-lg) {
-            width: 100%;
-            min-height: 500px;
-          }
-
-          @media (max-width: $breakpoint-md) {
-            min-height: 400px;
-          }
-
-          @media (max-width: $breakpoint-sm) {
-            min-height: 300px;
-          }
+          aspect-ratio: 16/9;
         }
       }
     }
@@ -106,11 +99,5 @@
       background: $primary-color;
       opacity: 1;
     }
-  }
-
-  // Efeito Coverflow
-  .swiper-slide-shadow-left,
-  .swiper-slide-shadow-right {
-    background-image: linear-gradient(to left, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
   }
 } 

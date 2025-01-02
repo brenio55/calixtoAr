@@ -31,37 +31,22 @@ const Equipe = () => {
             effect="coverflow"
             grabCursor={true}
             centeredSlides={true}
-            slidesPerView="3"
-            initialSlide={1}
             loop={true}
+            slidesPerView="auto"
             autoplay={{
               delay: 3000,
               disableOnInteraction: false,
             }}
             coverflowEffect={{
-              rotate: 0,
+              rotate: 50,
               stretch: 0,
-              depth: 200,
+              depth: 100,
               modifier: 1,
-              slideShadows: true,
+              slideShadows: false,
             }}
             pagination={{ clickable: true }}
             navigation={true}
             className="equipe-swiper"
-            breakpoints={{
-              320: {
-                slidesPerView: 1,
-                spaceBetween: 20
-              },
-              768: {
-                slidesPerView: 2,
-                spaceBetween: 30
-              },
-              1024: {
-                slidesPerView: 3,
-                spaceBetween: -100
-              }
-            }}
           >
             {equipeSlides.map((slide) => (
               <SwiperSlide key={slide.id}>
