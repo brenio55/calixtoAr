@@ -38,6 +38,10 @@ const ClientesDeConfianca = () => {
           ))}
         </div>
       </div>
+      <svg width="378" height="2" viewBox="0 0 378 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="-8.74228e-08" y1="1" x2="378" y2="0.999967" stroke="black" stroke-opacity="0.23" stroke-width="2"/>
+        </svg>
+
     </section>
   );
 };

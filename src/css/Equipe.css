@@ -482,56 +482,107 @@ section.tecnologia .timeline .desde1968 {
   margin-top: 135px;
 }
 
-.clientesDeConfianca {
+.equipe {
   background-color: white;
   padding: 80px 0;
-  position: relative;
   width: 100%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+  overflow: hidden;
 }
-.clientesDeConfianca .section-title {
+.equipe .section-title {
   color: #000;
   margin-bottom: 24px;
+  text-align: center;
 }
-.clientesDeConfianca .subTitleHeroBanner {
+.equipe .subTitleHeroBanner {
   color: #000;
+  text-align: center;
+  margin-bottom: 20px;
 }
-.clientesDeConfianca .marcas-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  margin-top: 50px;
-  padding: 0 20px;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+.equipe .secondary-title {
+  color: #000;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.125rem;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px;
+  font-weight: 400;
+  line-height: 1.5;
 }
-.clientesDeConfianca .marcas-container .marca-item {
-  width: 160px;
-  height: 110px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.equipe .equipe-slider {
+  padding: 40px 0;
+  max-width: 100vw;
+  margin: 0 auto;
+}
+.equipe .equipe-slider .equipe-swiper {
+  padding: 50px 0;
+  overflow: visible;
+}
+.equipe .equipe-slider .swiper-slide {
+  transition: all 0.3s ease;
+  opacity: 0.4;
+  transform: scale(0.85);
+}
+.equipe .equipe-slider .swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
+}
+.equipe .equipe-slider .swiper-slide .equipe-slide {
   background: white;
   border-radius: 8px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  transition: all 0.2s ease-in-out;
-  padding: 10px;
-}
-.clientesDeConfianca .marcas-container .marca-item:hover {
-  transform: translateY(-5px);
+  overflow: hidden;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
-.clientesDeConfianca .marcas-container .marca-item img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+.equipe .equipe-slider .swiper-slide .equipe-slide img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1205/905;
+  object-fit: cover;
 }
-.clientesDeConfianca svg {
-  margin-top: 55px;
-}/*# sourceMappingURL=ClientesDeConfianca.css.map */
+@media (min-width: 992px) {
+  .equipe .equipe-slider .swiper-slide .equipe-slide img {
+    width: 1205px;
+    height: 515px;
+  }
+}
+@media (max-width: 992px) {
+  .equipe .equipe-slider .swiper-slide .equipe-slide img {
+    width: 100%;
+    min-height: 500px;
+  }
+}
+@media (max-width: 768px) {
+  .equipe .equipe-slider .swiper-slide .equipe-slide img {
+    min-height: 400px;
+  }
+}
+@media (max-width: 576px) {
+  .equipe .equipe-slider .swiper-slide .equipe-slide img {
+    min-height: 300px;
+  }
+}
+.equipe .swiper-button-next,
+.equipe .swiper-button-prev {
+  color: #161632;
+}
+.equipe .swiper-button-next:after,
+.equipe .swiper-button-prev:after {
+  font-size: 24px;
+}
+@media (max-width: 768px) {
+  .equipe .swiper-button-next,
+  .equipe .swiper-button-prev {
+    display: none;
+  }
+}
+.equipe .swiper-pagination-bullet {
+  background: #ced4da;
+  opacity: 0.5;
+}
+.equipe .swiper-pagination-bullet-active {
+  background: #161632;
+  opacity: 1;
+}
+.equipe .swiper-slide-shadow-left,
+.equipe .swiper-slide-shadow-right {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
+}/*# sourceMappingURL=Equipe.css.map */

@@ -17,7 +17,7 @@ const UserHome = () => {
       <Diferenciais />
       <Tecnologia />
       <ClientesDeConfianca />
-      <Clientes />
+      {/* <Clientes /> */}
       <Equipe />
     </>
   );
