@@ -1,0 +1,53 @@
+@import '../../sass/styles.scss';
+
+.clientesDeConfianca {
+  background-color: white;
+  padding: 80px 0;
+  width: 100%;
+  
+  .section-title {
+    color: #000;
+    margin-bottom: 24px;
+  }
+
+  .subTitleHeroBanner {
+    color: #000;
+  }
+
+  .marcas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .marca-item {
+      width: 160px;
+      height: 110px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      border-radius: 8px;
+      box-shadow: $shadow-sm;
+      transition: $transition-base;
+      padding: 10px;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: $shadow-md;
+      }
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+} 

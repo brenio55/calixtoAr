@@ -6,6 +6,7 @@ import Diferenciais from '../Diferenciais/Diferenciais';
 import Clientes from '../Clientes/Clientes';
 import Equipe from '../Equipe/Equipe';
 import Tecnologia from '../Tecnologia/Tecnologia';
+import ClientesDeConfianca from '../ClientesDeConfianca/ClientesDeConfianca';
 
 const UserHome = () => {
   return (
@@ -15,6 +16,7 @@ const UserHome = () => {
       <QuemSomos />
       <Diferenciais />
       <Tecnologia />
+      <ClientesDeConfianca />
       <Clientes />
       <Equipe />
     </>
