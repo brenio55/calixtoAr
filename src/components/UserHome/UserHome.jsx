@@ -7,6 +7,7 @@ import Clientes from '../Clientes/Clientes';
 import Equipe from '../Equipe/Equipe';
 import Tecnologia from '../Tecnologia/Tecnologia';
 import ClientesDeConfianca from '../ClientesDeConfianca/ClientesDeConfianca';
+import Contato from '../Contato/Contato';
 
 const UserHome = () => {
   return (
@@ -17,8 +18,8 @@ const UserHome = () => {
       <Diferenciais />
       <Tecnologia />
       <ClientesDeConfianca />
-      {/* <Clientes /> */}
       <Equipe />
+      <Contato />
     </>
   );
 };

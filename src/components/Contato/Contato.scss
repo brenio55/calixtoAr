@@ -1,0 +1,161 @@
+@import '../../sass/styles.scss';
+
+.contato {
+  background-color: white;
+  min-height: 959px;
+  width: 100%;
+  padding: 50px 0;
+  
+  .section-title {
+    color: #000;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  .subTitleHeroBanner {
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: $font-size-2xl;
+    font-weight: $font-weight-medium;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .secondary-title {
+    color: #000;
+    font-family: $font-family-primary;
+    font-size: $font-size-lg;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto 30px;
+    font-weight: $font-weight-light;
+    line-height: 1.6;
+    padding: 0 20px;
+
+    @media (max-width: $breakpoint-md) {
+      font-size: $font-size-md;
+      padding: 0 15px;
+    }
+  }
+
+  .tertiary-title {
+    color: #000;
+    font-family: $font-family-primary;
+    font-size: $font-size-md;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 50px;
+    font-weight: 200;
+    line-height: 1.4;
+  }
+
+  .form-container {
+    width: 100%;
+    max-width: unset;
+    margin: 0 auto;
+    padding: 0;
+    background: transparent;
+
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      background-color: #1E1709;
+      padding: 40px;
+      border-radius: $border-radius-lg;
+      box-shadow: $shadow-md;
+
+      @media (max-width: $breakpoint-md) {
+        padding: 20px;
+        // margin: 0 15px;
+      }
+
+      .form-row {
+        display: flex;
+        gap: 20px;
+        width: 100%;
+        
+        @media (max-width: $breakpoint-md) {
+          flex-direction: column;
+        }
+
+        .form-group {
+          flex: 1;
+        }
+      }
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+
+        label {
+          font-family: $font-family-primary;
+          font-size: $font-size-sm;
+          font-weight: $font-weight-medium;
+          color: white;
+        }
+
+        input, textarea {
+          padding: 12px 16px;
+          border: 1px solid $gray-300;
+          border-radius: $border-radius-md;
+          font-family: $font-family-primary;
+          font-size: $font-size-base;
+          transition: $transition-base;
+          background-color: white;
+          color: #000;
+          width: 100%;
+
+          &:focus {
+            outline: none;
+            border-color: $primary-color;
+            box-shadow: 0 0 0 2px rgba($primary-color, 0.1);
+          }
+
+          &::placeholder {
+            color: $gray-600;
+          }
+        }
+
+        textarea {
+          resize: vertical;
+          min-height: 120px;
+        }
+      }
+
+      .submit-button {
+        background-color: $primary-color;
+        color: white;
+        border: none;
+        border-radius: $border-radius-md;
+        padding: 14px 28px;
+        font-family: $font-family-primary;
+        font-size: $font-size-base;
+        font-weight: $font-weight-medium;
+        cursor: pointer;
+        transition: $transition-base;
+        align-self: center;
+        margin-top: 20px;
+        min-width: 200px;
+
+        &:hover {
+          background-color: darken($primary-color, 10%);
+          transform: translateY(-2px);
+        }
+
+        &:active {
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+
+  .container{
+    max-width: 100%;
+  }
+} 
