@@ -8,6 +8,7 @@ import Equipe from '../Equipe/Equipe';
 import Tecnologia from '../Tecnologia/Tecnologia';
 import ClientesDeConfianca from '../ClientesDeConfianca/ClientesDeConfianca';
 import Contato from '../Contato/Contato';
+import Footer from '../Footer/Footer';
 
 const UserHome = () => {
   return (
@@ -20,6 +21,7 @@ const UserHome = () => {
       <ClientesDeConfianca />
       <Equipe />
       <Contato />
+      <Footer />
     </>
   );
 };

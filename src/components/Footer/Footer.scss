@@ -1,0 +1,114 @@
+@import '../../sass/styles.scss';
+
+.footer {
+  background-color: white;
+  padding: 50px 0;
+  width: 100%;
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+
+    // Logo e Tradição
+    .footer-brand {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+
+      .footer-logo {
+        height: 100px;
+        width: auto;
+      }
+
+      .brand-name {
+        font-family: $font-family-primary;
+        font-size: $font-size-xl;
+        font-weight: 500;
+        color: #000;
+        margin: 0;
+      }
+
+      .brand-description {
+        font-family: $font-family-primary;
+        font-size: $font-size-base;
+        font-weight: 200;
+        color: #000;
+        margin: 0;
+        max-width: 400px;
+        line-height: 1.5;
+      }
+    }
+
+    // Certificações
+    .footer-certificates {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      .certificates-title {
+        font-family: $font-family-primary;
+        font-size: $font-size-lg;
+        font-weight: 500;
+        color: #000;
+        margin: 0;
+      }
+
+      .certificates-container {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+
+        .certificate-item {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          
+          img {
+            height: 48px;
+            width: auto;
+            max-width: 100px;
+            object-fit: contain;
+            transition: $transition-base;
+
+            &:hover {
+              transform: scale(1.05);
+            }
+          }
+        }
+      }
+    }
+
+    // Direitos Reservados
+    .footer-rights {
+      p {
+        font-family: $font-family-primary;
+        font-size: $font-size-sm;
+        font-weight: 200;
+        color: #000;
+        margin: 0;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint-md) {
+    padding: 30px 0;
+
+    .footer-content {
+      gap: 30px;
+
+      .certificates-container {
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+    }
+  }
+} 

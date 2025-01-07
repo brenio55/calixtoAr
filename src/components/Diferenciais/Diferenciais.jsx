@@ -7,6 +7,15 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
+const marcas = [
+  { id: 1, src: '/img/Marcas/samsung.svg', alt: 'Samsung' },
+  { id: 2, src: '/img/Marcas/trane.svg', alt: 'Trane' },
+  { id: 3, src: '/img/Marcas/carrier.svg', alt: 'Carrier' },
+  { id: 4, src: '/img/Marcas/midea.svg', alt: 'Midea' },
+  { id: 5, src: '/img/Marcas/lg.svg', alt: 'LG' },
+  { id: 6, src: '/img/Marcas/daikin.svg', alt: 'Daikin' },
+];
+
 const Diferenciais = () => {
   return (
     <section className="hero-heading-left nossosDiferenciais">
@@ -44,28 +53,23 @@ const Diferenciais = () => {
         <p>Entre as marcas das quais trabalhamos e nossos funcionários possuem conhecimento técnico avançado, estão:</p>
 
         <div className="slider slider-nossos-diferenciais">
-          <Swiper
+           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={30}
             slidesPerView={4}
-            navigation
-            pagination={{ clickable: true }}
+            loop={true}
             autoplay={{
-              delay: 2500,
+              delay: 3000,
               disableOnInteraction: false,
             }}
-            loop={true}
-            className="marcas-slider"
+            pagination={{ clickable: true }}
+            navigation={true}
+            className="swiper-marcas"
           >
-            {[...Array(8)].map((_, index) => (
-              <SwiperSlide key={index}>
+            {marcas.map((marca) => (
+              <SwiperSlide key={marca.id}>
                 <div className="marca-item">
-                  <img 
-                    src={`https://placehold.co/160x108?text=Marca ${index + 1}`}
-                    alt={`Marca ${index + 1}`}
-                    width={160}
-                    height={108}
-                  />
+                  <img src={marca.src} alt={marca.alt} />
                 </div>
               </SwiperSlide>
             ))}
