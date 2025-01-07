@@ -25,12 +25,14 @@ const ClientesDeConfianca = () => {
   return (
     <section className="clientesDeConfianca">
       <div className="container">
-        <h1 className="section-title">Clientes de <strong className="text-span-black">Confiança</strong></h1>
-        <p className="subTitleHeroBanner">
+        <h1 className="section-title" data-aos="fade-down">
+          Clientes de <strong className="text-span-black">Confiança</strong>
+        </h1>
+        <p className="subTitleHeroBanner" data-aos="fade-up" data-aos-delay="200">
           Confira alguns dos <strong>nossos clientes</strong> de confiança das quais tivemos e ainda temos o <strong>prazer</strong> de atender
         </p>
         
-        <div className="marcas-container">
+        <div className="marcas-container" data-aos="fade-up" data-aos-delay="400">
           {marcas.map((marca) => (
             <div key={marca.id} className="marca-item">
               <img src={marca.src} alt={marca.alt} />
@@ -40,10 +42,9 @@ const ClientesDeConfianca = () => {
       </div>
       <svg width="378" height="2" viewBox="0 0 378 2" fill="none" xmlns="http://www.w3.org/2000/svg">
         <line x1="-8.74228e-08" y1="1" x2="378" y2="0.999967" stroke="black" stroke-opacity="0.23" stroke-width="2"/>
-        </svg>
-
+      </svg>
     </section>
   );
-};
+}
 
 export default ClientesDeConfianca; 

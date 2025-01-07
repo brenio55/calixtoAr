@@ -20,7 +20,7 @@ const Diferenciais = () => {
   return (
     <section className="hero-heading-left nossosDiferenciais">
       <div className="container-4">
-        <h1 className="section-title">Nossos Diferenciais</h1>
+        <h1 className="section-title" data-aos="fade-down">Nossos Diferenciais</h1>
       </div>
 
       <br></br>
@@ -28,11 +28,11 @@ const Diferenciais = () => {
       <br></br>
 
       <div className="hero-wrapper">
-        <div className="hero-split ">
+        <div className="hero-split" data-aos="fade-right">
           <img src="/img/nossoDiferenciaisEquip.svg" loading="lazy" alt="Nossa História" className="shadow-two dropDownShadowImage nossosDiferenciaisEquipImg" />
         </div>
 
-        <div className="hero-split hero-split-right">    
+        <div className="hero-split hero-split-right" data-aos="fade-left" data-aos-delay="200">    
           <p className="titleLightTextBeside titleLightTextBesideRight"><strong>Equipe Própria, Treinada e Certificada</strong></p>
           <p className="margin-bottom-24px lighterTextBeside lightTextBesideRight">
             Nossos técnicos são <span className="text-span-black">especializados</span> em todas as marcas e modelos de ar condicionado, passando por <span className="text-span-black">treinamentos contínuos</span> e atualizações
@@ -44,7 +44,7 @@ const Diferenciais = () => {
         </div>
       </div>
 
-      <div>
+      <div data-aos="fade-up" data-aos-delay="400">
         <br></br>
         <br></br>
         <br></br>

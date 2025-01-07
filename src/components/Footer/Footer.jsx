@@ -11,36 +11,28 @@ const Footer = () => {
 
   return (
     <footer className="footer">
-      <div className="container">
-        <div className="footer-content">
-          {/* Logo e Tradição */}
-          <div className="footer-brand">
-            <img src="/img/logoCalixto.png" alt="Calixto Ar Logo" className="footer-logo" />
-            <h2 className="brand-name">Calixto Ar</h2>
-            <p className="brand-description">
-              +50 anos de tradição e experiência, cuidando da saúde do seu ar-condicionado.
-            </p>
-          </div>
+      <div className="footer-content">
+        <div className="footer-brand" data-aos="fade-up">
+          <img src="/img/logoCalixto.png" alt="Calixto Ar Logo" className="footer-logo" />
+          <h2 className="brand-name">Calixto Ar</h2>
+          <p className="brand-description">
+            +50 anos de tradição e experiência, cuidando da saúde do seu ar-condicionado.
+          </p>
+        </div>
 
-          {/* Certificações */}
-          <div className="footer-certificates">
-            <h3 className="certificates-title">Certificações</h3>
-            <div className="certificates-container">
-              {certificacoes.map((cert) => (
-                <div key={cert.id} className="certificate-item">
-                  <img src={cert.src} alt={cert.alt} />
-                </div>
-              ))}
-            </div>
+        <div className="footer-certificates" data-aos="fade-up" data-aos-delay="200">
+          <h3 className="certificates-title">Certificações</h3>
+          <div className="certificates-container">
+            {certificacoes.map((certificado) => (
+              <div key={certificado.id} className="certificate-item">
+                <img src={certificado.src} alt={certificado.alt} />
+              </div>
+            ))}
           </div>
+        </div>
 
-          {/* Direitos Reservados */}
-          <div className="footer-rights">
-            <p>
-              Todos os Direitos Reservados, Calixto Ar 2024<br />
-              Desenvolvido por DiVSeC
-            </p>
-          </div>
+        <div className="footer-rights" data-aos="fade-up" data-aos-delay="400">
+          <p>© 2024 Calixto Ar. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
