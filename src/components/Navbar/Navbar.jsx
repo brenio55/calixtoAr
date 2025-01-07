@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Navbar.scss';
 
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const bannerHeight = window.innerHeight; // Altura do banner (100vh)
+      setIsScrolled(window.scrollY > bannerHeight * 0.1); // 10% do banner
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <div className="navbar-logo-left">
+    <div className={`navbar-logo-left ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-logo-left-container shadow-three">
         <div className="container">
           <div className="navbar-wrapper">

@@ -385,13 +385,17 @@ body {
   text-align: center;
 }
 
-.inicio {
+#inicio {
   padding-top: 122px;
 }
-.inicio .button.w-button:hover {
+#inicio .button.w-button {
+  transition: 0.2s all;
+}
+#inicio .button.w-button:hover {
   background: white;
   color: black;
   border: 1px solid white;
+  transition: 0.2s all;
 }
 
 section.quemSomos {
@@ -540,6 +544,11 @@ section.tecnologia .timeline .desde1968 {
   z-index: 1030;
   background-color: rgba(22, 22, 50, 0.1);
   backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+}
+.navbar-logo-left.scrolled {
+  background-color: rgba(22, 22, 50, 0.8705882353);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 .navbar-logo-left-container {
   z-index: 5;

@@ -8,6 +8,12 @@
   z-index: $z-index-fixed;
   background-color: rgba($primary-color, 0.1);
   backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+
+  &.scrolled {
+    background-color: #161632de;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  }
 
   &-container {
     z-index: 5;
