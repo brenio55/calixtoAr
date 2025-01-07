@@ -14,13 +14,27 @@ const UserHome = () => {
   return (
     <>
       <Navbar />
-      <MainBanner />
-      <QuemSomos />
-      <Diferenciais />
-      <Tecnologia />
-      <ClientesDeConfianca />
-      <Equipe />
-      <Contato />
+      <section id="inicio">
+        <MainBanner />
+      </section>
+      <section id="quem-somos">
+        <QuemSomos />
+      </section>
+      <section id="diferenciais">
+        <Diferenciais />
+      </section>
+      <section id="tecnologia">
+        <Tecnologia />
+      </section>
+      <section id="clientes">
+        <ClientesDeConfianca />
+      </section>
+      <section id="equipe">
+        <Equipe />
+      </section>
+      <section id="contato">
+        <Contato />
+      </section>
       <Footer />
     </>
   );

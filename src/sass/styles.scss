@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Outfit:wght@100..900&display=swap');
 
-
 // Core Colors
 $primary-color: #161632;
 $secondary-color: #d4b758;
@@ -24,6 +23,31 @@ $gray-600: #6c757d;
 $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
+
+// Scroll Behavior
+html {
+  scroll-behavior: smooth;
+}
+
+// Custom Scrollbar
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #353535;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #77c4ff;
+  border-radius: 4px;
+  
+  &:hover {
+    background: darken($primary-color, 10%);
+  }
+}
 
 // Typography
 $font-family-primary: 'Outfit', sans-serif;
@@ -242,22 +266,44 @@ body{
   letter-spacing: 0.25px;
   margin-left: 5px;
   margin-right: 5px;
-  padding: 5px 10px;
+  padding: 8px 16px;
   font-family: $font-family-primary;
   font-size: $font-size-base;
   line-height: 20px;
   text-decoration: none;
+  border-radius: $border-radius-md;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: $secondary-color;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
 
   &:hover {
-    color: #fff;
-    transform: scale(1.05);
+    color: $secondary-color;
+    transform: translateY(-2px);
+
+    &::before {
+      width: 100%;
+    }
+  }
+
+  &:active {
+    transform: translateY(0);
   }
 
   &:focus-visible {
-    outline-offset: 0px;
-    color: #0050bd;
-    border-radius: 4px;
-    outline: 2px solid #0050bd;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba($secondary-color, 0.5);
   }
 
   @media screen and (max-width: 991px) {
@@ -493,6 +539,21 @@ body{
     line-height: 60px;
     color: #fff;
     text-align: center;
+}
+
+#inicio{
+  padding-top: 122px;
+
+  .button.w-button{
+    transition: 0.2s all;
+
+    &:hover{
+      background: white;
+      color: black;
+      border: 1px solid white;
+      transition: 0.2s all;
+    }
+  }
 }
 
 section.quemSomos{

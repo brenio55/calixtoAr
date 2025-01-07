@@ -385,17 +385,13 @@ body {
   text-align: center;
 }
 
-#inicio {
+.inicio {
   padding-top: 122px;
 }
-#inicio .button.w-button {
-  transition: 0.2s all;
-}
-#inicio .button.w-button:hover {
+.inicio .button.w-button:hover {
   background: white;
   color: black;
   border: 1px solid white;
-  transition: 0.2s all;
 }
 
 section.quemSomos {
@@ -534,4 +530,99 @@ section.tecnologia .timeline .timelineSvg {
 }
 section.tecnologia .timeline .desde1968 {
   margin-top: 135px;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+.footer {
+  background-color: white;
+  padding: 50px 0;
+  width: 100%;
+}
+.footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+}
+.footer .footer-content .footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.footer .footer-content .footer-brand .footer-logo {
+  height: 100px;
+  width: auto;
+}
+.footer .footer-content .footer-brand .brand-name {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #000;
+  margin: 0;
+}
+.footer .footer-content .footer-brand .brand-description {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  color: #000;
+  margin: 0;
+  max-width: 400px;
+  line-height: 1.5;
+}
+.footer .footer-content .footer-certificates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.footer .footer-content .footer-certificates .certificates-title {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #000;
+  margin: 0;
+}
+.footer .footer-content .footer-certificates .certificates-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+.footer .footer-content .footer-certificates .certificates-container .certificate-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .footer-content .footer-certificates .certificates-container .certificate-item img {
+  height: 48px;
+  width: auto;
+  max-width: 100px;
+  object-fit: contain;
+  transition: all 0.2s ease-in-out;
+}
+.footer .footer-content .footer-certificates .certificates-container .certificate-item img:hover {
+  transform: scale(1.05);
+}
+.footer .footer-content .footer-rights p {
+  font-family: "Outfit", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 200;
+  color: #000;
+  margin: 0;
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 0;
+  }
+  .footer .footer-content {
+    gap: 30px;
+  }
+  .footer .footer-content .certificates-container {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}/*# sourceMappingURL=Footer.css.map */
