@@ -65,28 +65,30 @@ const Contato = () => {
               </div>
             </div>
 
-            <div className="form-group">
-              <label htmlFor="assunto">Assunto</label>
-              <input
-                type="text"
-                id="assunto"
-                name="assunto"
-                value={formData.assunto}
-                onChange={handleChange}
-                required
-              />
-            </div>
+            <div className="form-row">
+              <div className="form-group">
+                <label htmlFor="assunto">Assunto</label>
+                <input
+                  type="text"
+                  id="assunto"
+                  name="assunto"
+                  value={formData.assunto}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
 
-            <div className="form-group">
-              <label htmlFor="email">E-mail</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
+              <div className="form-group">
+                <label htmlFor="email">E-mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
             </div>
 
             <div className="form-group">
