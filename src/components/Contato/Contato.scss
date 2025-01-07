@@ -56,17 +56,22 @@
     max-width: unset;
     margin: 0 auto;
     padding: 0;
-    background: transparent;
+    background-color: #1E1709;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 
     form {
-      width: 100%;
+      width: 960px;
       display: flex;
       flex-direction: column;
+      justify-content: center;
       gap: 20px;
       background-color: #1E1709;
       padding: 40px;
       border-radius: $border-radius-lg;
       box-shadow: $shadow-md;
+      margin: 0 auto;
 
       @media (max-width: $breakpoint-md) {
         padding: 20px;
@@ -81,16 +86,13 @@
         @media (max-width: $breakpoint-md) {
           flex-direction: column;
         }
-
-        .form-group {
-          flex: 1;
-        }
       }
 
       .form-group {
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        // gap: 8px;
+        // flex: unset;
         width: 100%;
 
         label {
@@ -109,7 +111,7 @@
           transition: $transition-base;
           background-color: white;
           color: #000;
-          width: 100%;
+          // width: 100%;
 
           &:focus {
             outline: none;
