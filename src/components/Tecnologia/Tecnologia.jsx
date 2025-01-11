@@ -1,22 +1,27 @@
 function Tecnologia() {
   return (
     <section className="tecnologia">
-      <div className="container-4">
-        <h1 className="section-title strongWhite" data-aos="fade-down">
-          Tecnologia & <strong>Inovação</strong>
-        </h1>
+       <div className="container-4" data-aos="fade-down" data-aos-delay="400">
+        <h1 className="section-title">Tecnologia de Ponta</h1>
       </div>
-
+      <br></br>
+      <br></br>
+      <br></br>
+      
       <div className="hero-wrapper">
-        <div className="hero-split" data-aos="fade-right">
-          <img src="/img/Tecnologia/arCondicionadoTopPredio.svg" loading="lazy" alt="Nossa História" className="shadow-two dropDownShadowImage nossosDiferenciaisEquipImg" />
-        </div>
 
-        <div className="hero-split hero-split-right equipePropria" data-aos="fade-left" data-aos-delay="200">    
-          <p className="margin-bottom-24px lighterTextBeside lighterTextBesideRight">
-            Utilizamos as mais avançadas tecnologias e ferramentas do mercado, garantindo eficiência e qualidade em nossos serviços
-          </p>
-        </div>
+      <div className="hero-split hero-split-right equipePropria" data-aos="fade-right" data-aos-delay="200">    
+        <p className="titleLightTextBeside titleLightTextBesideLeft"><strong className="strongWhite">Equipe Própria, Treinada e Certificada</strong></p>
+        <p className="margin-bottom-24px lighterTextBeside titleLightTextBesideLeft">
+          Utilizamos equipamentos <span className="text-span-black strongWhite">modernos</span> e procedimentos que asseguram a máxima  <span className="text-span-black strongWhite">eficiência</span> do seu sistema de ar condicionado. 
+        </p>
+        <p className="margin-bottom-24px lighterTextBeside titleLightTextBesideLeft">
+        Nosso exclusivo Kit Select, com tecnologia de limpeza a vapor de 150 graus, elimina bactérias e <span className="text-span-black strongWhite">aumenta a vida útil</span> dos equipamentos, <span className="text-span-black strongWhite"> reduzindo custos </span> operacionais e <span className="text-span-black strongWhite">prevenindo problemas</span> futuros.
+        </p>
+      </div>
+      <div className="hero-split " data-aos="fade-left" data-aos-delay="400">
+        <img src="/img/Tecnologia/consertoAr.svg" loading="lazy" alt="Nossa História" className="shadow-two dropDownShadowImage nossosDiferenciaisEquipImg" />
+      </div>
       </div>
 
       <div className="container-4">
