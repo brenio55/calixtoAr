@@ -106,7 +106,7 @@ $spacing-24: 6rem;     // 96px
 $spacing-32: 8rem;     // 128px
 
 // Breakpoints
-$breakpoint-xs: 0;
+$breakpoint-xs: 320px;
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
@@ -226,12 +226,22 @@ body{
   align-items: center;
   height: 80px;
   display: flex;
+
+  @media screen and (max-width: $breakpoint-sm) {
+    height: auto;
+    padding: 10px 0;
+    flex-direction: column;
+  }
 }
 
 .nav-menu {
   &-wrapper {
     color: #fff;
     background-color: transparent;
+
+    @media screen and (max-width: $breakpoint-sm) {
+      width: 100%;
+    }
   }
 
   &-two {
@@ -253,10 +263,12 @@ body{
       box-shadow: 0 8px 50px rgba(0, 0, 0, 0.05);
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $breakpoint-sm) {
       border-radius: 20px;
       flex-direction: column;
-      padding-bottom: 30px;
+      padding: 15px;
+      width: 100%;
+      gap: 10px;
     }
   }
 }
@@ -351,6 +363,19 @@ body{
   margin-bottom: 34px;
   font-size: 64px;
   line-height: 60px;
+
+  @media screen and (max-width: $breakpoint-sm) {
+    width: 90vw;
+    font-size: 36px;
+    line-height: 40px;
+    margin-top: -30px;
+  }
+
+  @media screen and (max-width: $breakpoint-xs) {
+    width: 95vw;
+    font-size: 28px;
+    line-height: 32px;
+  }
 }
 
 .text-span {
@@ -383,6 +408,18 @@ body{
   color: white;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: $breakpoint-sm) {
+    width: 180px;
+    height: 45px;
+    font-size: 24px;
+  }
+
+  @media screen and (max-width: $breakpoint-xs) {
+    width: 160px;
+    height: 40px;
+    font-size: 20px;
+  }
 
   &-primary-2 {
     color: #fff;
@@ -428,6 +465,14 @@ body{
     align-items: flex-start;
     margin-bottom: -40px;
   }
+
+  @media screen and (max-width: $breakpoint-sm) {
+    padding: 0 15px;
+  }
+
+  @media screen and (max-width: $breakpoint-xs) {
+    padding: 0 10px;
+  }
 }
 
 .hero-split {
@@ -440,6 +485,13 @@ body{
   @media screen and (max-width: 991px) {
     max-width: 100%;
     margin-bottom: 40px;
+  }
+
+  @media screen and (max-width: $breakpoint-sm) {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
   }
 }
 
@@ -474,11 +526,32 @@ body{
   padding: 0 205px;
   text-align: center;
   margin-bottom: 36px;
+
+  @media screen and (max-width: $breakpoint-sm) {
+    padding: 0 20px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media screen and (max-width: $breakpoint-xs) {
+    padding: 0 15px;
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 
 .heroAirConditioner{
   margin-top: 11px;
   width: 560px;
+
+  @media screen and (max-width: $breakpoint-sm) {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  @media screen and (max-width: $breakpoint-xs) {
+    max-width: 290px;
+  }
 }
 
 .dropDownShadowImage{
@@ -488,11 +561,25 @@ body{
   box-shadow: 0px 4px 32px 17px rgba(151, 151, 151, 0.25);
   border-radius: 2px;
 
+  @media screen and (max-width: $breakpoint-sm) {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 .logo{
   width: 225px;
   height: auto;
+
+  @media screen and (max-width: $breakpoint-sm) {
+    width: 180px;
+  }
+
+  @media screen and (max-width: $breakpoint-xs) {
+    width: 150px;
+  }
 }
 
 .lightTextBeside{
@@ -504,6 +591,17 @@ body{
   margin-left: 0;
   padding: 0;
   font-family: 'Outfit';
+
+  @media screen and (max-width: $breakpoint-sm) {
+    width: 100%;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  @media screen and (max-width: $breakpoint-xs) {
+    font-size: 28px;
+    line-height: 34px;
+  }
 }
 
 .lighterTextBeside{
@@ -515,6 +613,17 @@ body{
   margin-left: 0;
   padding: 0;
   font-family: "Outfit";
+
+  @media screen and (max-width: $breakpoint-sm) {
+    width: 100%;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  @media screen and (max-width: $breakpoint-xs) {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 
 .titleLightTextBeside{
@@ -539,6 +648,16 @@ body{
     line-height: 60px;
     color: #fff;
     text-align: center;
+
+    @media screen and (max-width: $breakpoint-sm) {
+      font-size: 36px;
+      line-height: 42px;
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+      font-size: 28px;
+      line-height: 34px;
+    }
 }
 
 #inicio{
@@ -683,14 +802,28 @@ section.tecnologia{
   padding-top: 15px;
   padding-bottom: 150px;
 
+  @media screen and (max-width: $breakpoint-sm) {
+    min-height: auto;
+    padding-bottom: 80px;
+  }
+
   background: conic-gradient(from 115.16deg at 50% 50%, #000000 0deg, #11111F 37.8deg, #161632 227.16deg, #120F5C 351.36deg, #000000 360deg);
 
   .equipePropria{
     padding-left: 35px;
+
+    @media screen and (max-width: $breakpoint-sm) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
 
   .lighterTextBeside{
     width: 726px;
+
+    @media screen and (max-width: $breakpoint-sm) {
+      width: 100%;
+    }
   }
 
   .timeline{
@@ -699,18 +832,38 @@ section.tecnologia{
     min-height: 1000px;
     padding-top: 15px;
     
-    .lighterTextBeside{
+    @media screen and (max-width: $breakpoint-sm) {
+      min-height: auto;
+      padding-top: 30px;
+    }
+    
+    .lighterTextBeside {
       width: 526px;
       line-height: 70px;
+
+      @media screen and (max-width: $breakpoint-sm) {
+        width: 100%;
+        line-height: 40px;
+        padding: 0 15px;
+      }
     }
 
-    .lighterTextBesideLeft{
+    .lighterTextBesideLeft {
       padding-left: 35px;
+
+      @media screen and (max-width: $breakpoint-sm) {
+        padding-left: 15px;
+      }
     }
 
-    .lighterTextBesideRight{
+    .lighterTextBesideRight {
       padding-right: 35px;
       text-align: right;
+
+      @media screen and (max-width: $breakpoint-sm) {
+        padding-right: 15px;
+        text-align: left;
+      }
     }
 
     .timelineSvg{
@@ -718,11 +871,33 @@ section.tecnologia{
       left: 50%;
       top: 0;
       transform: translateX(-50%);
+
+      img {
+        @media screen and (max-width: $breakpoint-sm) {
+          width: 100%;
+          max-width: 300px;
+        }
+
+        @media screen and (max-width: $breakpoint-xs) {
+          max-width: 250px;
+        }
+      }
     }
 
     .desde1968{
       margin-top: 135px;
+
+      @media screen and (max-width: $breakpoint-sm) {
+        margin-top: 60px;
+      }
+    }
+
+    .nossosDiferenciaisEquipImg {
+      @media screen and (max-width: $breakpoint-sm) {
+        margin-left: 0;
+        width: 100%;
+        max-width: 300px;
+      }
     }
   }
-
 }
