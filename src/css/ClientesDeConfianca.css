@@ -630,148 +630,56 @@ section.tecnologia .timeline .desde1968 {
   }
 }
 
-.navbar-logo-left {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1030;
-  background-color: rgba(22, 22, 50, 0.8);
-  backdrop-filter: blur(8px);
-  transition: all 0.3s ease;
-}
-.navbar-logo-left.scrolled {
-  background-color: rgba(22, 22, 50, 0.95);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-}
-.navbar-logo-left-container {
-  z-index: 5;
-  width: 100%;
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-.navbar-logo-left-container.shadow-three {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.navbar-logo-left .navbar-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 80px;
-}
-.navbar-logo-left .logo {
-  height: 60px;
-  width: auto;
-}
-.navbar-logo-left .mobile-menu-button {
-  display: block;
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-}
-@media screen and (min-width: 1024px) {
-  .navbar-logo-left .mobile-menu-button {
-    display: none;
-  }
-}
-.navbar-logo-left .mobile-menu-button img {
-  width: 40px;
-  height: 40px;
-}
-.navbar-logo-left .nav-menu-wrapper {
-  display: none;
-}
-@media screen and (min-width: 1024px) {
-  .navbar-logo-left .nav-menu-wrapper {
-    display: block;
-  }
-}
-.navbar-logo-left .nav-menu-wrapper.mobile {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  background-color: rgba(22, 22, 50, 0.95);
-  padding: 20px;
-  transform: translateY(-100%);
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease;
-}
-.navbar-logo-left .nav-menu-wrapper.mobile.open {
-  display: block;
-  transform: translateY(0);
-  opacity: 1;
-  visibility: visible;
-}
-.navbar-logo-left .nav-menu-two {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  align-items: center;
-}
-@media screen and (max-width: 1023px) {
-  .navbar-logo-left .nav-menu-two {
-    flex-direction: column;
-    gap: 15px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .navbar-logo-left .nav-menu-two {
-    flex-direction: row;
-    gap: 20px;
-    background-color: rgba(22, 22, 50, 0.87);
-    border-radius: 50px;
-    padding: 10px 20px;
-  }
-}
-.navbar-logo-left .nav-link {
-  color: #fff;
-  letter-spacing: 0.25px;
-  padding: 8px 16px;
-  font-family: "Outfit", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  text-decoration: none;
-  border-radius: 0.25rem;
-  transition: all 0.3s ease;
+.clientesDeConfianca {
+  background-color: white;
+  padding: 80px 0;
   position: relative;
-  white-space: nowrap;
-}
-@media screen and (max-width: 1023px) {
-  .navbar-logo-left .nav-link {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-}
-.navbar-logo-left .nav-link::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  background-color: #d4b758;
-  transition: all 0.3s ease;
-  transform: translateX(-50%);
-}
-.navbar-logo-left .nav-link:hover {
-  color: #d4b758;
-  transform: translateY(-2px);
-}
-.navbar-logo-left .nav-link:hover::before {
   width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
-.navbar-logo-left .nav-link:active {
-  transform: translateY(0);
+.clientesDeConfianca .section-title {
+  color: #000;
+  margin-bottom: 24px;
 }
-.navbar-logo-left .nav-link:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(212, 183, 88, 0.5);
-}/*# sourceMappingURL=Navbar.css.map */
+.clientesDeConfianca .subTitleHeroBanner {
+  color: #000;
+}
+.clientesDeConfianca .marcas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.clientesDeConfianca .marcas-container .marca-item {
+  width: 160px;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in-out;
+  padding: 10px;
+}
+.clientesDeConfianca .marcas-container .marca-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.clientesDeConfianca .marcas-container .marca-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.clientesDeConfianca svg {
+  margin-top: 115px;
+}/*# sourceMappingURL=ClientesDeConfianca.css.map */

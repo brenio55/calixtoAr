@@ -630,148 +630,158 @@ section.tecnologia .timeline .desde1968 {
   }
 }
 
-.navbar-logo-left {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1030;
-  background-color: rgba(22, 22, 50, 0.8);
-  backdrop-filter: blur(8px);
-  transition: all 0.3s ease;
-}
-.navbar-logo-left.scrolled {
-  background-color: rgba(22, 22, 50, 0.95);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-}
-.navbar-logo-left-container {
-  z-index: 5;
+.contato {
+  background-color: white;
+  min-height: 959px;
   width: 100%;
-  max-width: 1140px;
-  margin: 0 auto;
+  padding: 50px 0;
+}
+.contato .section-title {
+  color: #000;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.contato .subTitleHeroBanner {
+  color: #000;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contato .secondary-title {
+  color: #000;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.125rem;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto 30px;
+  font-weight: 300;
+  line-height: 1.6;
   padding: 0 20px;
 }
-.navbar-logo-left-container.shadow-three {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.navbar-logo-left .navbar-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 80px;
-}
-.navbar-logo-left .logo {
-  height: 60px;
-  width: auto;
-}
-.navbar-logo-left .mobile-menu-button {
-  display: block;
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-}
-@media screen and (min-width: 1024px) {
-  .navbar-logo-left .mobile-menu-button {
-    display: none;
+@media (max-width: 768px) {
+  .contato .secondary-title {
+    font-size: 1rem;
+    padding: 0 15px;
   }
 }
-.navbar-logo-left .mobile-menu-button img {
-  width: 40px;
-  height: 40px;
-}
-.navbar-logo-left .nav-menu-wrapper {
-  display: none;
-}
-@media screen and (min-width: 1024px) {
-  .navbar-logo-left .nav-menu-wrapper {
-    display: block;
-  }
-}
-.navbar-logo-left .nav-menu-wrapper.mobile {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  background-color: rgba(22, 22, 50, 0.95);
-  padding: 20px;
-  transform: translateY(-100%);
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease;
-}
-.navbar-logo-left .nav-menu-wrapper.mobile.open {
-  display: block;
-  transform: translateY(0);
-  opacity: 1;
-  visibility: visible;
-}
-.navbar-logo-left .nav-menu-two {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  align-items: center;
-}
-@media screen and (max-width: 1023px) {
-  .navbar-logo-left .nav-menu-two {
-    flex-direction: column;
-    gap: 15px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .navbar-logo-left .nav-menu-two {
-    flex-direction: row;
-    gap: 20px;
-    background-color: rgba(22, 22, 50, 0.87);
-    border-radius: 50px;
-    padding: 10px 20px;
-  }
-}
-.navbar-logo-left .nav-link {
-  color: #fff;
-  letter-spacing: 0.25px;
-  padding: 8px 16px;
+.contato .tertiary-title {
+  color: #000;
   font-family: "Outfit", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  text-decoration: none;
-  border-radius: 0.25rem;
-  transition: all 0.3s ease;
-  position: relative;
-  white-space: nowrap;
+  font-size: 1rem;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 50px;
+  font-weight: 200;
+  line-height: 1.4;
 }
-@media screen and (max-width: 1023px) {
-  .navbar-logo-left .nav-link {
-    display: block;
-    width: 100%;
-    text-align: center;
+.contato .form-container {
+  width: 100%;
+  max-width: unset;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #1E1709;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.contato .form-container form {
+  width: 960px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  background-color: #1E1709;
+  padding: 40px;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .contato .form-container form {
+    padding: 20px;
   }
 }
-.navbar-logo-left .nav-link::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  background-color: #d4b758;
-  transition: all 0.3s ease;
-  transform: translateX(-50%);
+@media (max-width: 412px) {
+  .contato .form-container form {
+    padding: 20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
-.navbar-logo-left .nav-link:hover {
-  color: #d4b758;
-  transform: translateY(-2px);
-}
-.navbar-logo-left .nav-link:hover::before {
+.contato .form-container form .form-row {
+  display: flex;
+  gap: 20px;
   width: 100%;
 }
-.navbar-logo-left .nav-link:active {
+@media (max-width: 768px) {
+  .contato .form-container form .form-row {
+    flex-direction: column;
+  }
+}
+.contato .form-container form .form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.contato .form-container form .form-group label {
+  font-family: "Outfit", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: white;
+}
+.contato .form-container form .form-group input, .contato .form-container form .form-group textarea {
+  padding: 12px 16px;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+  background-color: white;
+  color: #000;
+}
+.contato .form-container form .form-group input:focus, .contato .form-container form .form-group textarea:focus {
+  outline: none;
+  border-color: #161632;
+  box-shadow: 0 0 0 2px rgba(22, 22, 50, 0.1);
+}
+.contato .form-container form .form-group input::placeholder, .contato .form-container form .form-group textarea::placeholder {
+  color: #6c757d;
+}
+.contato .form-container form .form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+.contato .form-container form .submit-button {
+  border: none;
+  border-radius: 0.25rem;
+  padding: 14px 28px;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  align-self: center;
+  margin-top: 20px;
+  min-width: 200px;
+  width: 100%;
+  background: white;
+  color: black;
+  font-weight: 700;
+  border: 1px solid transparent;
+}
+.contato .form-container form .submit-button:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  transform: translateY(-2px);
+}
+.contato .form-container form .submit-button:active {
   transform: translateY(0);
 }
-.navbar-logo-left .nav-link:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(212, 183, 88, 0.5);
-}/*# sourceMappingURL=Navbar.css.map */
+.contato .container {
+  max-width: 100%;
+}/*# sourceMappingURL=Contato.css.map */
