@@ -661,6 +661,25 @@ section.tecnologia .timeline .desde1968 {
   align-items: center;
   height: 80px;
 }
+@media screen and (min-width: 412px) {
+  .navbar-logo-left .navbar-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    flex-direction: row;
+    padding-right: 85px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .navbar-logo-left .navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding-right: unset;
+  }
+}
 .navbar-logo-left .logo {
   height: 60px;
   width: auto;
@@ -725,7 +744,6 @@ section.tecnologia .timeline .desde1968 {
   .navbar-logo-left .nav-menu-two {
     flex-direction: row;
     gap: 20px;
-    background-color: rgba(22, 22, 50, 0.87);
     border-radius: 50px;
     padding: 10px 20px;
   }

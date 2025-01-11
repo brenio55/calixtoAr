@@ -33,6 +33,24 @@
     justify-content: space-between;
     align-items: center;
     height: 80px;
+
+    @media screen and (min-width: 412px) {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      flex-direction: row;
+      padding-right: 85px;
+    }
+
+    @media screen and (min-width: 1023px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+      // flex-direction: column;
+      padding-right: unset;
+    }
   }
 
   .logo {
@@ -101,7 +119,7 @@
     @media screen and (min-width: 1024px) {
       flex-direction: row;
       gap: 20px;
-      background-color: rgba($primary-color, 0.87);
+      // background-color: rgba($primary-color, 0.87);
       border-radius: 50px;
       padding: 10px 20px;
     }
