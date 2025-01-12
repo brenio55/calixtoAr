@@ -18,9 +18,17 @@
   &-container {
     z-index: 5;
     width: 100%;
-    max-width: 1140px;
+    // max-width: 1140px;
     margin: 0 auto;
     padding: 0 20px;
+
+    @media screen and (min-width: 412px) {
+      padding: 0px;
+    }
+
+    @media screen and (min-width: 1023px) {
+      padding: 0 20px;
+    }
 
     &.shadow-three {
       padding-top: 10px;
@@ -64,6 +72,7 @@
     border: none;
     padding: 0;
     cursor: pointer;
+    outline: none;
 
     @media screen and (min-width: 1024px) {
       display: none;
@@ -107,13 +116,13 @@
   .nav-menu-two {
     display: flex;
     margin: 0;
-    padding: 0;
+    padding: 15px;
     list-style: none;
     align-items: center;
 
     @media screen and (max-width: 1023px) {
       flex-direction: column;
-      gap: 15px;
+      gap: 35px;
     }
 
     @media screen and (min-width: 1024px) {
@@ -138,10 +147,15 @@
     position: relative;
     white-space: nowrap;
 
-    @media screen and (max-width: 1023px) {
+    @media screen and (min-width: 412px) {
+      padding: 8px 0px;
+    }
+
+    @media screen and (min-width: 1023px) {
       display: block;
       width: 100%;
       text-align: center;
+      padding: 8px 16px;
     }
 
     &::before {

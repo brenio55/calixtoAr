@@ -718,6 +718,8 @@ section.tecnologia{
     width: 100%;
     min-height: 1000px;
     padding-top: 15px;
+
+  
     
     @media screen and (max-width: $breakpoint-sm) {
       min-height: auto;
@@ -758,6 +760,14 @@ section.tecnologia{
       left: 50%;
       top: 0;
       transform: translateX(-50%);
+
+      @media screen and (min-width: 412px) {
+        display: none;
+      }
+  
+      @media screen and (min-width: 1023px) {
+        display: block;
+      }
 
       img {
         @media screen and (max-width: $breakpoint-sm) {

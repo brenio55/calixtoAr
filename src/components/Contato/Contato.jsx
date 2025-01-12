@@ -39,7 +39,7 @@ const Contato = () => {
           Preencha o formulário abaixo e entraremos em contato o mais breve possível
         </p>
 
-        <div className="form-container" data-aos="fade-up" data-aos-delay="800">
+        <div className="form-container">
           <form onSubmit={handleSubmit}>
             <div className="form-row">
               <div className="form-group">
