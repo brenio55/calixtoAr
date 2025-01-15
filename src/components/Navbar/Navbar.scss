@@ -22,7 +22,12 @@
     margin: 0 auto;
     padding: 0 20px;
 
-    @media screen and (min-width: 412px) {
+    &.shadow-three {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    @media screen and (min-width: 330px) {
       padding: 0px;
     }
 
@@ -30,10 +35,7 @@
       padding: 0 20px;
     }
 
-    &.shadow-three {
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
+   
   }
 
   .navbar-wrapper {
@@ -81,6 +83,7 @@
     img {
       width: 40px;
       height: 40px;
+      padding-right: 50px;
     }
   }
 
