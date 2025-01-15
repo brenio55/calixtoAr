@@ -5,6 +5,8 @@
   min-height: 959px;
   width: 100%;
   padding: 60px 0;
+
+
   
   .section-title {
     color: #000;
@@ -52,6 +54,7 @@
   }
 
   .form-container {
+    
     width: 100%;
     max-width: unset;
     margin: 0 auto;
@@ -60,6 +63,37 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 2;
+    margin-top: 60px;
+
+    &::before{
+      content: "";
+      position: absolute;
+      top: -65px;
+      
+      width: 100%;
+      height: 120px;
+      background-image: url(/img/Contato/topborderSvgContact.svg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 1;
+    }
+
+    &::after{
+      content: "";
+      position: absolute;
+      bottom: -80px;
+      
+      width: 100%;
+      height: 120px;
+      background-image: url(/img/Contato/bottomborderSvgContact.svg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 1;
+    }
 
     form {
       width: 960px;

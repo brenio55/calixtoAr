@@ -33,6 +33,7 @@ const Footer = () => {
 
         <div className="footer-rights" data-aos="fade-up" data-aos-delay="400">
           <p>© 2024 Calixto Ar. Todos os direitos reservados.</p>
+          <p>Desenvolvido por <a href="https://divsec.cloud/" target="_blank" rel="noopener noreferrer">DiVSeC</a></p>
         </div>
       </div>
     </footer>

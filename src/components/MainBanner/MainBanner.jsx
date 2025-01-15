@@ -23,13 +23,15 @@ const MainBanner = () => {
         </div>
         <a 
           href="#quem-somos" 
-          className="button w-button"
+          className="button w-button buttonMainBanner"
           data-aos="zoom-in" 
           data-aos-delay="600"
         >
           Conhecer
+          <img src="/img/icons/setaRight.png" alt="Arrow Right" className="arrowRight" />
         </a>
       </div>
+      <img src="/img/icons/pageHolderWhite.svg" alt="Page Holder" className="pageHolder" />
     </section>
   );
 };

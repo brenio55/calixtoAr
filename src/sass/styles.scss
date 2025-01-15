@@ -456,6 +456,20 @@ body{
   }
 }
 
+.buttonMainBanner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  
+  
+  img{
+    padding-top: 5px;
+    width: 15px;
+  }
+}
+
 .logo{
   width: 225px;
   height: auto;
@@ -688,6 +702,7 @@ section.tecnologia{
   min-height: 1000px;
   padding-top: 15px;
   padding-bottom: 150px;
+  position: relative;
 
   @media screen and (max-width: $breakpoint-sm) {
     min-height: auto;
@@ -799,6 +814,23 @@ section.tecnologia{
   }
 }
 
+.pageHolder, .pageHolderMainBanner{
+  position: absolute;
+  bottom: -40px;
+  z-index: 1;
+  height: 65px;
+}
 
+.pageHolderQuemSomos{
+  bottom: -35px;
+}
 
+.pageHolderDiferenciais{
+  bottom: -32px;
+}
 
+.pageHolderTecnologia{
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+}

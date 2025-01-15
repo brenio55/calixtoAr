@@ -44,6 +44,7 @@ const QuemSomos = () => {
             </p>
           </div>
         </div>
+        <img src="/img/icons/pageHolderWhiteTopBlackBottom.svg" alt="Page Holder" className="pageHolder pageHolderQuemSomos" />
     </section>
   );
 };

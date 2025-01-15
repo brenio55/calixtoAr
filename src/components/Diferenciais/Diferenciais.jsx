@@ -76,6 +76,7 @@ const Diferenciais = () => {
           </Swiper>
         </div>
       </div>
+      <img src="/img/icons/pageHolderBlackTopWhiteBottom.svg" alt="Page Holder" className="pageHolder pageHolderDiferenciais" />
     </section>
   );
 };

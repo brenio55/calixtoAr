@@ -27,17 +27,17 @@ const Contato = () => {
     <section className="contato">
       <div className="container">
         <h1 className="section-title" data-aos="fade-down">
-          Entre em <strong className="text-span-black">Contato</strong>
+          Solicite Sua <strong className="text-span-black">Proposta</strong>
         </h1>
         <p className="subTitleHeroBanner" data-aos="fade-up" data-aos-delay="200">
-          Estamos prontos para atender você e sua empresa com as melhores soluções em climatização
+          Garanta a Eficiência e Segurança do Seu Sistema de Ar Condicionado
         </p>
-        <h2 className="secondary-title" data-aos="fade-up" data-aos-delay="400">
-          Nossa equipe está disponível para esclarecer todas as suas dúvidas e fornecer o suporte necessário
-        </h2>
         <p className="tertiary-title" data-aos="fade-up" data-aos-delay="600">
-          Preencha o formulário abaixo e entraremos em contato o mais breve possível
+        Seja você uma pequena, média ou grande empresa, nossos contratos de manutenção garantem a longevidade dos equipamentos, economia de energia e redução de falhas. Entre em contato agora e saiba como podemos ajudar sua empresa a ter o melhor clima interno, com máxima segurança e eficiência.
         </p>
+
+        <br />
+        
 
         <div className="form-container">
           <form onSubmit={handleSubmit}>
