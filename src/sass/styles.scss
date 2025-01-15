@@ -463,10 +463,15 @@ body{
   flex-direction: row;
   gap: 10px;
   
-  
   img{
     padding-top: 5px;
     width: 15px;
+  }
+
+  &:hover {
+    img[src*="/img/icons/setaRight.png"] {
+      content: url('/img/icons/setaRightBlack.png');
+    }
   }
 }
 
