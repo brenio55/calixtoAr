@@ -150,7 +150,7 @@ const Contato = () => {
               disabled={submitStatus.loading}
 
             >
-              Entrar em Contato pelo Whatsapp <img src="https://static.whatsapp.net/rsrc.php/yA/r/hbGnlm1gXME.svg" alt="Whatsapp" />
+              Entrar em Contato pelo <img src="https://static.whatsapp.net/rsrc.php/yA/r/hbGnlm1gXME.svg" alt="Whatsapp" />
             </a>
           </form>
         </div>
