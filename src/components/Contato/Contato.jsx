@@ -141,9 +141,23 @@ const Contato = () => {
             >
               {submitStatus.loading ? 'Enviando...' : 'Entrar em Contato'}
             </button>
+            <p style={{ textAlign: 'center', margin: '10px 0 -5px 0' }}>--- OU ---</p>
+            <a 
+              href="https://api.whatsapp.com/send?phone=551921222000&text=Ol%C3%A1,%20Calixto%20Ar,%20vi%20o%20site%20de%20voc%C3%AAs%20e%20queria%20mais%20informa%C3%A7%C3%B5es"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="submit-button whatsapp-button"
+              disabled={submitStatus.loading}
+
+            >
+              Entrar em Contato pelo Whatsapp <img src="https://static.whatsapp.net/rsrc.php/yA/r/hbGnlm1gXME.svg" alt="Whatsapp" />
+            </a>
           </form>
         </div>
+
+
       </div>
+
     </section>
   );
 };
