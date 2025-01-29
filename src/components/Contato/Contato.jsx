@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Contato.scss';
+import { submitContactForm } from '../../services/ApiService';
 
 const Contato = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +11,12 @@ const Contato = () => {
     mensagem: ''
   });
 
+  const [submitStatus, setSubmitStatus] = useState({
+    loading: false,
+    error: null,
+    success: false
+  });
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prevState => ({
@@ -18,9 +25,29 @@ const Contato = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
+    setSubmitStatus({ loading: true, error: null, success: false });
+    
+    try {
+      await submitContactForm(formData);
+      setSubmitStatus({ loading: false, error: null, success: true });
+      setFormData({
+        nome: '',
+        sobrenome: '',
+        assunto: '',
+        email: '',
+        mensagem: ''
+      });
+      alert('Mensagem enviada com sucesso! Em breve nossa equipe entrará em contato.');
+    } catch (error) {
+      setSubmitStatus({ 
+        loading: false, 
+        error: 'Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente.', 
+        success: false 
+      });
+      alert('Erro ao enviar mensagem. Por favor, tente novamente mais tarde.');
+    }
   };
 
   return (
@@ -33,7 +60,7 @@ const Contato = () => {
           Garanta a Eficiência e Segurança do Seu Sistema de Ar Condicionado
         </p>
         <p className="tertiary-title" data-aos="fade-up" data-aos-delay="600">
-        Seja você uma pequena, média ou grande empresa, nossos contratos de manutenção garantem a longevidade dos equipamentos, economia de energia e redução de falhas. Entre em contato agora e saiba como podemos ajudar sua empresa a ter o melhor clima interno, com máxima segurança e eficiência.
+          Seja você uma pequena, média ou grande empresa, nossos contratos de manutenção garantem a longevidade dos equipamentos, economia de energia e redução de falhas. Entre em contato agora e saiba como podemos ajudar sua empresa a ter o melhor clima interno, com máxima segurança e eficiência.
         </p>
 
         <br />
@@ -51,6 +78,7 @@ const Contato = () => {
                   value={formData.nome}
                   onChange={handleChange}
                   required
+                  disabled={submitStatus.loading}
                 />
               </div>
               <div className="form-group">
@@ -62,6 +90,7 @@ const Contato = () => {
                   value={formData.sobrenome}
                   onChange={handleChange}
                   required
+                  disabled={submitStatus.loading}
                 />
               </div>
             </div>
@@ -75,6 +104,7 @@ const Contato = () => {
                 value={formData.assunto}
                 onChange={handleChange}
                 required
+                disabled={submitStatus.loading}
               />
             </div>
 
@@ -87,6 +117,7 @@ const Contato = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
+                disabled={submitStatus.loading}
               />
             </div>
 
@@ -99,11 +130,16 @@ const Contato = () => {
                 onChange={handleChange}
                 required
                 rows="5"
+                disabled={submitStatus.loading}
               />
             </div>
 
-            <button type="submit" className="submit-button">
-              Entrar em Contato
+            <button 
+              type="submit" 
+              className="submit-button"
+              disabled={submitStatus.loading}
+            >
+              {submitStatus.loading ? 'Enviando...' : 'Entrar em Contato'}
             </button>
           </form>
         </div>
